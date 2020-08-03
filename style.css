@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100%vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 10% 60% 15%;
+}
+
+.buttons {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: firebrick;
+}
+
+.number {
+    width: 20%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.operator, .decimal, .all-clear {
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+}
+
+.output {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.output input {
+    width: 98%;
+    height: 91%;
+}
+
+.calculator-output {
+    font-size: 30px;
+    text-align: right;
+}
